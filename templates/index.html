@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Act Analysis Agent</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f7f9;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #007bff;
+            text-align: center;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        #upload-form {
+            background-color: #e9ecef;
+            padding: 20px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        input[type="file"] {
+            margin-right: 15px;
+        }
+
+        input[type="submit"] {
+            background-color: #28a745; /* Green */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+
+        pre {
+            background-color: #333;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 6px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .error {
+            color: #dc3545;
+            background-color: #f8d7da;
+            border: 1px solid #f5c6cb;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        #loader-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.9);
+            z-index: 1000;
+            text-align: center;
+            padding-top: 20%; 
+        }
+
+        .loader-spinner {
+            border: 6px solid #f3f3f3;
+            border-top: 6px solid #007bff;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        #loader-message {
+            font-size: 1.2em;
+            color: #007bff;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div id="loader-overlay">
+        <div class="loader-spinner"></div>
+        <div id="loader-message">Analyzing Document (Task 1, 2, 3, & 4)... Please wait.</div>
+    </div>
+    
+    <div class="container">
+        <h1>🤖 AI Agent: Universal Credit Act 2025 Analysis</h1>
+        
+        <form method="POST" enctype="multipart/form-data" id="upload-form">
+            <label for="pdf_file">Upload Universal Credit Act 2025 PDF:</label>
+            <input type="file" name="pdf_file" id="pdf_file" accept=".pdf" required>
+            <input type="submit" value="Run Agent Analysis">
+        </form>
+
+        {% if error_message %}
+            <div class="error">
+                Processing Error: {{ error_message }}
+            </div>
+        {% endif %}
+
+        {% if report_json %}
+            <h2>✅ Final Structured JSON Report</h2>
+            
+            <p>
+                The final report is generated below. It is also saved as
+                <code>final_structured_report.json</code> in the uploads folder.
+            </p>
+            
+            <pre>{{ report_json }}</pre>
+        {% endif %}
+    </div>
+
+    <script>
+        const form = document.getElementById('upload-form');
+        const loaderOverlay = document.getElementById('loader-overlay');
+
+        form.addEventListener('submit', function () {
+            const fileInput = document.getElementById('pdf_file');
+            
+            if (fileInput.files.length > 0) {
+                loaderOverlay.style.display = 'block';
+                form.querySelector('input[type="submit"]').disabled = true;
+            }
+        });
+    </script>
+</body>
+</html>

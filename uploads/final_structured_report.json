@@ -1,0 +1,67 @@
+{
+    "report_title": "Universal Credit Act 2025 - AI Agent Analysis Report",
+    "task_1_summary": {
+        "description": "5-10 point summary focusing on Purpose, Definitions, Eligibility, Obligations, and Enforcement.",
+        "summary_points": [
+            "The Act's primary purpose is to alter the rates of Universal Credit (UC) and legacy Employment and Support Allowance (ESA) for the tax years 2026-27 through 2029-30, implementing a combination of specific increases and freezes.",
+            "It obligates the Secretary of State to increase the UC standard allowance and ESA personal allowance annually by the rate of CPI inflation plus a fixed 'uplift percentage' specified for each year.",
+            "The Act introduces a new, lower rate for the Limited Capability for Work and Work-Related Activity (LCWRA) element for most new claimants from April 2026.",
+            "It creates protected eligibility groups, defining 'pre-2026 claimants' and 'severe conditions criteria claimants' who, along with the terminally ill, will continue to receive the existing, higher LCWRA rate.",
+            "It enforces a freeze on the LCWRA element, the Limited Capability for Work (LCW) element, and several ESA components by suspending the standard annual inflation-based up-rating for these specific benefits between 2026 and 2029.",
+            "Despite the freeze, it creates an obligation to ensure the total combined support for protected groups (standard allowance plus their protected LCWRA amount) increases annually by at least the rate of CPI inflation.",
+            "The provisions apply similarly to legacy Employment and Support Allowance, up-rating the personal allowance while freezing disability premiums and support components, with a similar protection for the total amount received.",
+            "The Act includes provisions to ensure its changes are applied correspondingly in Northern Ireland."
+        ]
+    },
+    "task_2_key_sections": {
+        "definitions": "Key terms defined include: 'tax year' (the 12 months beginning with 6 April); 'consumer prices index' (the all items consumer prices index published by the Statistics Board); 'standard allowance' (the allowance included in a universal credit award under section 9(1) of the Welfare Reform Act 2012); 'pre-2026 claimant' (a claimant entitled to UC with the LCWRA element before 6 April 2026 and continuously entitled since); and 'severe conditions criteria claimant' (a claimant with limited capability for work and work-related activity to whom at least one descriptor in Schedule 7 constantly applies for life).",
+        "obligations": "Not Found in Text",
+        "responsibilities": "The Secretary of State must exercise relevant powers to ensure that the amounts of the standard allowance for tax years 2026-27 to 2029-30 are at least the amounts calculated annually based on CPI plus a relevant uplift percentage (Section 1(1)). The Secretary of State must also exercise powers to increase the protected LCWRA amount or standard allowance to ensure their combined sum increases by at least the relevant CPI percentage for the tax years 2026-27 to 2029-30 (Section 4(1)). Similar responsibilities apply to legacy employment and support allowance payments (Section 5(3)).",
+        "eligibility": "A claimant is defined as a 'pre-2026 claimant' if they were entitled to an award of universal credit that included the LCWRA element at any time before 6 April 2026 and have been continuously entitled since (Regulation 27A). A claimant is defined as a 'severe conditions criteria claimant' if they have limited capability for work and work-related activity, and at least one of the descriptors in Schedule 7 constantly applies to them and will do so for the rest of their life (Regulation 40A).",
+        "payments": "The standard allowance for tax years 2026-27 to 2029-30 is calculated by taking the previous year's amount, increasing it by the relevant CPI percentage, and then increasing that result by a 'relevant uplift percentage' which is specified for each year (e.g., 2.3% for 2026-27) (Section 1). A new LCWRA element of \u00a3217.26 is introduced for new claimants from 6 April 2026 (Section 2). The LCWRA and LCW elements are frozen and not subject to annual up-rating for the tax years ending in 2026, 2027, 2028, and 2029 (Section 3). Similar freezes and CPI-based protections apply to legacy employment and support allowance payments (Section 5).",
+        "penalties": "Not Found in Text",
+        "record_keeping": "Not Found in Text"
+    },
+    "task_3_rule_checks": {
+        "description": "Analysis against 6 mandatory legislative requirements.",
+        "rule_checks": [
+            {
+                "rule": "Act must define key terms",
+                "status": "pass",
+                "evidence": "Section 1(6)(a) \u201cconsumer prices index\u201d means the all items consumer prices index published by the Statistics Board;",
+                "confidence": 100
+            },
+            {
+                "rule": "Act must specify eligibility criteria",
+                "status": "pass",
+                "evidence": "Schedule 1, 40A(2) A claimant is a severe conditions criteria claimant on the basis of an assessment under this Part if\u2014 (a) the claimant has limited capability for work and work-related activity on the basis of an assessment under this Part (see regulation 40(2)), and (b) at least one of the descriptors set out in Schedule 7 constantly applies to the claimant and will do so for the rest of the claimant\u2019s life.",
+                "confidence": 100
+            },
+            {
+                "rule": "Act must specify responsibilities of the administering authority",
+                "status": "pass",
+                "evidence": "Section 1(1) The Secretary of State must exercise a relevant power in order to secure that the amounts of the standard allowance for tax years 2026-27 to 2029-30 are at least the amounts calculated for each tax year in accordance with subsection (2).",
+                "confidence": 100
+            },
+            {
+                "rule": "Act must include enforcement or penalties",
+                "status": "fail",
+                "evidence": "The provided text is limited to altering benefit rates and amending regulations, and contains no provisions related to enforcement, sanctions, or penalties.",
+                "confidence": 100
+            },
+            {
+                "rule": "Act must include payment calculation or entitlement structure",
+                "status": "pass",
+                "evidence": "Section 1(2) Step 2 Increase the amounts identified in Step 1 by the relevant CPI percentage for the tax year. Step 3 Increase the amounts resulting from Step 2 by the relevant uplift percentage for the tax year.",
+                "confidence": 100
+            },
+            {
+                "rule": "Act must include record-keeping or reporting requirements",
+                "status": "fail",
+                "evidence": "The text focuses on benefit calculations and claimant definitions but does not contain any clauses mandating record-keeping or reporting by any party.",
+                "confidence": 100
+            }
+        ]
+    },
+    "disclaimer": "This report is generated by an AI Agent and should be verified against the original Act."
+}
